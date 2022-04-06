@@ -1,0 +1,1 @@
+// viết các func có thể chia sẻ giữa các page
