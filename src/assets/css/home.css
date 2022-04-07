@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --one-color: #d0e1f9;
+    --second-color: #4d648d;
+    --third-color: #283655;
+    --fourth-color: #1e1f26;
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.5s ease;
+
+}
+
+
+html {
+    font-size: 16px;
+}
+
+.home__container {
+    padding: 0;
+    background-color: var(--one-color);
+    height: 100vh;
+}
+
+.header__container {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.logo {
+    display:block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 24px;
+    flex-shrink: 2;
+}
+
+
+.logo__img {
+    width: 100%;
+
+}
+
+.menu .active {
+    font-weight: bold;
+}
+
+.account__container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    
+}
+
+.account__container .account__icon {
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+
+.account__list {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    box-shadow: 0px 3px 6px #ddd;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    display: none;
+    z-index: 10;
+    
+}
+
+.account__container:hover .account__list {
+    display: block;
+}
+
+.account__list::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -15px;
+    
+}
+
+.arrow-top::before {
+    
+    content: "";
+    position: absolute;
+    border: 12px solid transparent;
+    border-bottom-color:  rgb(255, 255, 255);
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 10px;
+    z-index: 1;
+}
+
+
+
+.account__item {
+    display: flex;
+    direction: row;
+    padding: 6px 12px;
+    
+}
+
+.account__item-icon {
+    margin-right: 24px;
+}
+
+.account__item:hover {
+    color:var(--second-color);
+    transition: var(--transition-fast);
+    background-color: #ddd;
+
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+}
+
+
+.banner__img {
+    height: 500px;
+    background-image: url(../images/slider-bg.png);
+    background-size: cover;
+}
+
+.banner__text {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.banner__des {
+    font-weight: bold;
+}
+
+/* main */
+.main {
+    height: 700px;
+}
+
+/* footer */
+
+.footer {
+    
+}
