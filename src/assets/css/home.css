@@ -301,7 +301,43 @@
 .services__container {
 }
 
-.services__title {
+.services__list {
+    padding: 36px 0;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 32px;
+}
+
+.service__left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__icon {
+    font-size: 40px;
+    color: #c29416;
+    padding: 8px;
+}
+
+.service__right {
+    flex: 8;
+    padding: 0 32px 0 16px;
+}
+
+.service__title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+.service__des {
+    font-size: 18px;
 }
 
 /* end of main */
