@@ -360,7 +360,7 @@ html {
 .service {
     display: flex;
     flex-direction: row;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
 }
 
 .service__left {
