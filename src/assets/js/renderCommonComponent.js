@@ -9,3 +9,8 @@ window.addEventListener('resize', e => {
     viewHeight = e.target.innerHeight
     handleSlide()
 })
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+
+});

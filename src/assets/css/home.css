@@ -232,6 +232,9 @@ html {
     cursor: pointer;
 }
 
+
+/* build */
+
 .build {
     border: 1px solid #ddd;
     border-radius: 10px;
