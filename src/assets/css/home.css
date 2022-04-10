@@ -34,7 +34,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -165,9 +164,6 @@ html {
 
 .banner {
     position: relative;
-}
-
-.banner__img {
     height: 500px;
     background-image: url(../images/slider-bg.png);
     background-size: cover;
@@ -319,10 +315,6 @@ html {
 
 .build__top-link-text {}
 
-.build__top-link-icon {}
-
-.build__top-link-text {}
-
 .build__body {
     padding: 8px 20px;
 }
@@ -430,11 +422,6 @@ html {
 
 .services__container {}
 
-
-/* services section */
-
-.services__container {}
-
 .services__list {
     padding: 36px 0;
 }
@@ -501,8 +488,6 @@ html {
 
 .footer__link-value {}
 
-.footer__link-value {}
-
 .footer__phone,
 .footer__email {
     display: flex;
@@ -528,7 +513,7 @@ html {
 
 .footer__item-link:hover {
     color: white;
-    transition: var(--transition-slow);
+    transition: var(--transition-fast);
     text-decoration: none;
 }
 
@@ -543,11 +528,4 @@ html {
 
 .footer__logo-img {
     width: 100%;
-}
-
-.footer__slogan {
-    text-align: center;
-    padding-top: 12px;
-    font-weight: bold;
-    color: rgb(162, 184, 231);
 }
