@@ -55,15 +55,7 @@ html {
 /* builds page */
 
 .build__container {
-    padding: 0;
-}
-
-.header__container {
-    height: 80px;
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 !important;
 }
 
 

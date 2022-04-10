@@ -19,12 +19,8 @@ html {
     font-size: 16px;
 }
 
-.header__container {
-    height: 80px;
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer__container {
+    padding: 0 !important;
 }
 
 

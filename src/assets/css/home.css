@@ -20,9 +20,12 @@ html {
 }
 
 .home__container {
-    padding: 0;
+    padding: 0 !important;
     background-color: var(--one-color);
 }
+
+
+/* header */
 
 .header__container {
     background-color: var(--second-color);
@@ -463,69 +466,3 @@ html {
 
 
 /* end of main */
-
-
-/* footer */
-
-.footer {
-    background-color: var(--footer-background-color);
-    padding: 36px 0;
-    color: var(--footer-text-color);
-}
-
-.footer__title {
-    font-weight: bold;
-    padding: 16px 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: rgb(179, 224, 53);
-}
-
-.footer__sub {
-    padding-bottom: 12px;
-}
-
-.footer__link-value {}
-
-.footer__phone,
-.footer__email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer__icon {
-    color: white;
-    font-size: 20px;
-    padding-right: 8px;
-}
-
-.footer__icon-email {
-    font-size: 18px;
-}
-
-.footer__item-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer__item-link:hover {
-    color: white;
-    transition: var(--transition-fast);
-    text-decoration: none;
-}
-
-.footer__logo {
-    width: 150px;
-    border: 3px solid #ddd;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer__logo-img {
-    width: 100%;
-}
