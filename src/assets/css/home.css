@@ -1,11 +1,42 @@
-.home__container {
+* {
+    box-sizing: border-box;
     padding: 0;
-    background-color: var(--one-color);
-    height: 100vh;
+    margin: 0;
 }
 
+:root {
+    --one-color: #d0e1f9;
+    --second-color: #4d648d;
+    --third-color: #283655;
+    --fourth-color: #1e1f26;
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.5s ease;
+    --footer-background-color: #52525c;
+    --footer-text-color: #a9b3bb;
+}
+
+html {
+    font-size: 16px;
+}
+
+.home__container {
+    padding: 0 !important;
+    background-color: var(--one-color);
+}
+
+
+/* header */
+
 .header__container {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--second-color);
+}
+
+.header__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
 }
 
 .logo {
@@ -22,9 +53,41 @@
     width: 100%;
 }
 
-.menu .active {
+
+/* menu */
+
+.menu__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item {}
+
+.menu__item-link {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 16px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+
+.menu__item-link:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: var(--transition-fast);
     font-weight: bold;
 }
+
+.menu__item-link.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/* account */
 
 .account__container {
     width: 40px;
@@ -99,13 +162,11 @@
     background-color: #ddd;
 }
 
+
 /* banner */
 
 .banner {
     position: relative;
-}
-
-.banner__img {
     height: 500px;
     background-image: url(../images/slider-bg.png);
     background-size: cover;
@@ -125,16 +186,22 @@
 .banner__title {
     font-size: 42px;
     font-weight: 700;
+    color: var(--third-color);
 }
 
 .banner__des {
-    font-weight: bold;
+    font-weight: 500;
+    color: var(--third-color);
 }
+
 
 /* end of header */
 
+
 /* main */
+
 .main {
+    background-color: white;
 }
 
 .section__container {
@@ -167,6 +234,9 @@
     padding: 36px 0;
     cursor: pointer;
 }
+
+
+/* build */
 
 .build {
     border: 1px solid #ddd;
@@ -244,11 +314,9 @@
     opacity: 1;
 }
 
-.build__top-link-icon {
-}
+.build__top-link-icon {}
 
-.build__top-link-text {
-}
+.build__top-link-text {}
 
 .build__body {
     padding: 8px 20px;
@@ -270,7 +338,6 @@
 
 .build__body-label {
     display: inline-block;
-
     padding-right: 8px;
     color: rgb(136, 132, 132);
 }
@@ -285,10 +352,11 @@
     color: rgb(83, 82, 82);
 }
 
+
 /* introduce section */
+
 .introduce__container {
     background-image: url(https://img.cenhomes.vn/location-district-bg2.jpg);
-    height: 500px;
     background-size: cover;
     color: white;
 }
@@ -297,9 +365,65 @@
     color: white;
 }
 
-/* services section */
-.services__container {
+.introduce__body {
+    padding-top: 36px;
 }
+
+.introduce__body-left {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduce__body-img-group {
+    display: flex;
+}
+
+.introduce__body-img {
+    width: 220px;
+    padding: 2px;
+}
+
+.introduce__body-right {}
+
+.introduce__body-title {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 24px 0 28px;
+}
+
+.introduce__body-des {
+    font-weight: 500;
+    color: rgb(207, 206, 206);
+    padding-bottom: 24px;
+}
+
+.introduce__body-btn {
+    padding: 4px 16px;
+    background-color: rgb(201, 148, 52);
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    text-decoration: none;
+    color: white;
+}
+
+.introduce__body-btn:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(228, 173, 71);
+}
+
+
+/* services section */
+
+.services__container {}
 
 .services__list {
     padding: 36px 0;
@@ -340,77 +464,5 @@
     font-size: 18px;
 }
 
+
 /* end of main */
-
-/* footer */
-
-.footer {
-    background-color: var(--footer-background-color);
-    padding: 36px 0;
-    color: var(--footer-text-color);
-}
-
-.footer__title {
-    font-weight: bold;
-    padding: 16px 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: rgb(179, 224, 53);
-}
-
-.footer__sub {
-    padding-bottom: 12px;
-}
-
-.footer__link-value {
-}
-
-.footer__phone,
-.footer__email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer__icon {
-    color: white;
-    font-size: 20px;
-    padding-right: 8px;
-}
-
-.footer__icon-email {
-    font-size: 18px;
-}
-
-.footer__item-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer__item-link:hover {
-    color: white;
-    transition: var(--transition-slow);
-    text-decoration: none;
-}
-
-.footer__logo {
-    width: 150px;
-    border: 3px solid #ddd;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer__logo-img {
-    width: 100%;
-}
-
-.footer__slogan {
-    text-align: center;
-    padding-top: 12px;
-    font-weight: bold;
-    color: rgb(162, 184, 231);
-}
