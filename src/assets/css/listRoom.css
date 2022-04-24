@@ -17,6 +17,11 @@
     width: 30%;
 }
 
+.list-room .build__top-img {
+    width: 100%;
+    height: 100%;
+}
+
 .list-room .build__top-status {
     top: 10px;
     left: 16px;
@@ -35,7 +40,7 @@
 }
 
 .modal-xl {
-    max-width: 1140px;
+    max-width: 1140px !important;
 }
 
 .modal-body .left-info {
@@ -75,7 +80,7 @@
 .room-floor {
     border-radius: 10px;
     border: 3px solid #385d8a;
-    margin: 0 30px;
+    margin: auto !important;
     padding: 25px 10px;
 }
 
@@ -91,10 +96,6 @@
 .color-label {
     width: 20px;
     height: 20px;
-}
-
-.color-group {
-    margin: 0 30px;
 }
 
 .color-group:nth-child(1) > .color-label {
