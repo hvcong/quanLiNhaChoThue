@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(async() => {
+            $(".header__load").load("./header.html");
+
+            await $(".footer__load").load("./footer.html");
+
+            console.log({
+                a: document.getElementById("header__load").children[5],
+            });
+        });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/contract.css" />
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="container-fluid contract__container">
+        <div class="header__load" id="header__load"></div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="container">
+                <div class="section__title">
+                    Hợp đồng thuê giường của bạn
+                </div>
+                <div class="contract__body">
+                    <div class="row">
+                        <div class="col-12 contract__item-heading">
+                            Thông tin về hai bên
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contract__item-title">
+                                Bên cho thuê trọ (Bên A)
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Họ và tên:
+                                </div>
+                                <div class="contract__item-value">
+                                    Hoàng Văn Phòng
+                                </div>
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Sinh ngày:
+                                </div>
+                                <div class="contract__item-value">
+                                    10/1/1970
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Nơi đăng kí HK:
+                                </div>
+                                <div class="contract__item-value">
+                                    4/5/4 đường số 10, khu phố 2, Hiệp Bình Chánh, TP Hồ Chí Minh
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Số CMND:
+                                </div>
+                                <div class="contract__item-value">
+                                    181123123
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Cấp ngày:
+                                </div>
+                                <div class="contract__item-value">
+                                    12/12/1995
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">Tại:</div>
+                                <div class="contract__item-value">
+                                    Hồ Chí Minh
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Số điện thoại
+                                </div>
+                                <div class="contract__item-value">
+                                    0124563987
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contract__item-title">
+                                Bên thuê phòng trọ (Bên B)
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Họ và tên:
+                                </div>
+                                <div class="contract__item-value">
+                                    Hoàng Văn Phòng
+                                </div>
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Sinh ngày:
+                                </div>
+                                <div class="contract__item-value">
+                                    10/1/1970
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Nơi đăng kí HK:
+                                </div>
+                                <div class="contract__item-value">
+                                    4/5/4 đường số 10, khu phố 2, Hiệp Bình Chánh, TP Hồ Chí Minh
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Số CMND:
+                                </div>
+                                <div class="contract__item-value">
+                                    181123123
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Cấp ngày:
+                                </div>
+                                <div class="contract__item-value">
+                                    12/12/1995
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">Tại:</div>
+                                <div class="contract__item-value">
+                                    Hồ Chí Minh
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Số điện thoại
+                                </div>
+                                <div class="contract__item-value">
+                                    0124563987
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 contract__item-heading">
+                            Thông tin hợp đồng
+                        </div>
+                        <div class="col-12">
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Ngày kí:
+                                </div>
+                                <div class="contract__item-value">
+                                    12/12/1995
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Thời hạn hợp đồng:
+                                </div>
+                                <div class="contract__item-value">
+                                    12/12/1995
+                                </div>
+                            </div>
+
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Tiền giường:
+                                </div>
+                                <div class="contract__item-value">
+                                    1.000.000 đồng
+                                </div>
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Tiền cọc:
+                                </div>
+                                <div class="contract__item-value">
+                                    500.000 đồng
+                                </div>
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Chu kì thanh toán:
+                                </div>
+                                <div class="contract__item-value">
+                                    1 tháng
+                                </div>
+                            </div>
+                            <div class="contract__item-group">
+                                <div class="contract__item-label">
+                                    Ngày thu tiền:
+                                </div>
+                                <div class="contract__item-value">10</div>
+                            </div>
+                        </div>
+                        <div class="col-12 contract__item-heading">
+                            Hình ảnh hợp đồng
+                        </div>
+                        <div class="col-12">
+                            <div class="contract__image">
+                                <div class="contract__image-body">
+                                    <img src="../assets/images/contract__img.png" alt="" class="contract__image-img" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div class="footer__load"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../assets/js/home.js"></script>
+</body>
+
+</html>
