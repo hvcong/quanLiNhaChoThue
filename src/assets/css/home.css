@@ -466,3 +466,31 @@ html {
 
 
 /* end of main */
+
+/* reponsive */
+
+@media (max-width: 767px) {
+
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service__icon {
+        font-size:45px;
+        padding-top: 24px;
+    }
+    
+}
+
+
+@media (max-width: 575px) {
+
+
+    .introduce__body-img {
+        width: 150px;
+        padding: 2px;
+    }
+    
+}
+

@@ -17,12 +17,30 @@
     <div class="header__container">
         <div class="container">
             <div class="header__body" id="header__body">
+
+                <!-- new statment -->
+                <div class="menu__bar d-block d-md-none" id="menu__bar">
+                    <i class="fa-solid fa-bars menu__bar-icon"></i>
+                </div>
+
+                <!-- add active class when click menu__bar -->
+                <div class="menu__layer" id="menu__layer">
+                    <div class="menu__layer-close" id="menu__layer-close">
+                        <i class="fa-solid fa-xmark menu__layer-close-icon"></i>
+                    </div>
+                </div>
+                <!-- end new statment -->
+
                 <div class="logo">
                     <img src="../assets/images/logo.jpg" alt="" class="logo__img" />
                 </div>
 
                 <!-- menu -->
-                <div class="menu__container">
+                <!-- add active-in-mobile class when click menu__bar -->
+                <div class="menu__container d-md-flex" id="menu__container">
+                    <div class="menu__item menu__item-title">
+                        REAL ESTATE
+                    </div>
                     <div class="menu__item">
                         <a href="../pages/home.html" class="menu__item-link item__menu-1">Trang chủ</a
                             >
@@ -47,6 +65,18 @@
                                 class="menu__item-link item__menu-4"
                                 >Chính sách</a
                             >
+                        </div>
+
+                        <div class="menu__item menu__item-media ">
+                            <a href="#" class="menu__item-link-media">
+                                <i class="fa-brands fa-facebook menu__item-link-media-icon"></i>
+                            </a>
+                            <a href="#" class="menu__item-link-media">
+                                <i class="fa-brands fa-twitter menu__item-link-media-icon"></i>
+                            </a>
+                            <a href="#" class="menu__item-link-media">
+                                <i class="fa-brands fa-instagram menu__item-link-media-icon"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -88,4 +118,5 @@
             </div>
         </div>
     </body>
+    <script src="../utils/index.js"></script>
 </html>
